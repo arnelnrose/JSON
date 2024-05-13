@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise</title>
+</head>
+<body>
+    <script>
+        /*
+    Create a JSON and make the keys a subject
+    name and the value a corresponding grade.
+
+    Use FOR/IN Loop to ITERATE through the
+    JSON and display the subjects and their grade.
+
+    Compute teh average of all the grades and display it.
+*/
+
+// JSON Grades
+let grades = {
+    Math: 94,
+    Science: 95,
+    Computer: 92,
+    Filipino: 90,
+    English: 89
+};
+let average = 0;
+
+// Iterate using For/In Loop
+for(let k in grades ){
+    console.log(`${k} : ${grades[k]}`);
+
+    // Adding all grades
+    average += grades[k];
+};
+    // Divided all Subject values
+average /= Object.keys(grades).length;
+    console.log("");
+    console.log(`Average : ${average}`);
+    </script>
+</body>
+</html>

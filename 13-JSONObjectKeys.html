@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Object.keys() Method</title>
+</head>
+<body>
+    <script>
+        /*
+    Returns the keys of a JSON in an array format.
+*/
+
+let person = {
+    firstName: "Arnel",
+    lastName: "Rose",
+    age: 43
+};
+
+let keys = Object.keys(person);
+
+for(let i = 0; i < keys.length; i++){
+    console.log(person[keys[i]]);
+}
+    </script>
+</body>
+</html>

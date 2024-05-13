@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JSON & For/In Loop</title>
+</head>
+<body>
+    <script>
+        /*
+    We can use FOR/IN Loop to ITERATE 
+    over all the keys inside a JSON.
+*/
+
+let person = {
+    firstName:"Arnel",
+    lastName: "Rose",
+    age: 43
+};
+
+for(let k in person){
+    console.log(`${k}: ${person[k]}`);
+
+}
+    </script>
+</body>
+</html>
