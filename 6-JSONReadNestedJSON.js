@@ -1,0 +1,26 @@
+/* 
+    You can read JSON values in a JSON by using its key
+    and accessing it normally by key.
+*/
+
+let person = {
+    firstName: "Arnel",
+    lastName: "Rose",
+    age: 43,
+    hobbies: ["Gaming", "Eating", "Sleeping"],
+    pets:{
+        1:{
+            name:"Aw-aw",
+            type: "Dog",
+            breed: "Askal"
+        },
+        2:{
+            name:"Miaow-miaow",
+            type: "Cat",
+            breed: "Pusgal"
+        }
+    }
+}
+
+console.log(person["pets"][1]["name"]);
+console.log(person.pets[1].type);
